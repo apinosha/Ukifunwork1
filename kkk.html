@@ -1,0 +1,139 @@
+<html>
+<head>
+  <title>APIN</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//connect.soundcloud.com/sdk.js"></script>
+  <script src="love2.js"></script>
+<style>
+body {
+  background-image: url("photo/purple-damask-wallpaper-hd-9.jpg");
+  background-repeat: repeat;
+  background-color: black;
+  background-size: 100%;
+  font-family: "Lato", sans-serif;
+}
+h2{
+  color:white;
+}
+h4{
+  color:SpringGreen;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("ul").hide();
+  });
+  $("#show").click(function(){
+    $("ul").show();
+  });
+});
+</script>
+
+<head>
+  <body>
+    <div id="navbar">
+      <a class="active1"  href="#default" id="logo">Api <b>Apinosha</b></a>
+      <a class="active" href="index.html">Home</a>
+      <div id="navbar-right">
+      <a href="loginpage.html">Login</a>
+        <a href="singup.html">Sign up</a>
+      </div>
+    </div>
+    <br><br>
+
+
+
+   <div class="panel-body">
+         <div class="row">
+         <div class=" col-md-3 ">
+             <a href="show.html">
+
+               <div class="caption">
+               <p id="p1">  Game of Thronrs  <p id="p2" >Episodes:84</p></a></p>
+               </div>
+             </div>
+
+             <div class="sidenav">
+               <a href="#about"></a>
+               <a href="#services"></a>
+               <a href="#clients"></a>
+               <a href="#contact"></a>
+               <a href="Skills.html">My Skills</a>
+               <a href="#services">Services</a>
+               <a href="#clients">Clients</a>
+               <a href="#clients">Clients</a>
+             </div>
+
+             <div class="main">
+               <center>
+                   <h2> Hello
+                     I am  Api Apinosha Karunakaran
+
+                     <img src="photo/525.png"
+                   class="img-circle" alt="Cinque Terre" width="200" height="180" ></h2>
+
+               </center>
+
+               <div id="flip"><b><h4>baout me</h4></b></div>
+               <div id="panel"><h4>I Currently, I am studying Full Stack Web Development at uki.life. What I seek as my major strength is that I have a burning passion towards my goal of becoming a successful Software Developer. I am interested in photography.
+                  I am reasonably good at Front End Development, Content Writing and Blogging.</h4></div>
+
+               <h2>Sidebar</h2>
+               <p>This sidebar is of full height (100%) and always shown.</p>
+               <p>Scroll down the page to see the result.</p>
+               <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+               <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+               <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+               <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+               <div style="text-align:center">
+   <h2>Tabbed Image Gallery</h2>
+   <p>Click on the images below:</p>
+ </div>
+
+ <!-- The four columns -->
+ <div class="row">
+   <div class="column">
+     <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+   </div>
+   <div class="column">
+     <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+   </div>
+ </div>
+
+ <div class="container">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   <img id="expandedImg" style="width:100%">
+   <div id="imgtext"></div>
+ </div>
+</div>
+ <script>
+ function myFunction(imgs) {
+   var expandImg = document.getElementById("expandedImg");
+   var imgText = document.getElementById("imgtext");
+   expandImg.src = imgs.src;
+   imgText.innerHTML = imgs.alt;
+   expandImg.parentElement.style.display = "block";
+ }
+ </script>
+    <body>
